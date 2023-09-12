@@ -2,7 +2,6 @@ class Chronometer {
   constructor() {
     this.currentTime = 0;
     this.intervalId = null;
-    // ... your code goes here
   }
 
   start(printTimeCallback) {
@@ -35,15 +34,13 @@ class Chronometer {
 
   stop() {
     clearInterval(this.intervalId);
-    // ... your code goes here
   }
 
   reset() {
     return this.currentTime = 0;
-    // ... your code goes here
   }
 
   split() {
-    return ` ${this.computeTwoDigitNumber(this.getMinutes())}:${this.computeTwoDigitNumber(this.getSeconds())}`
+    return `${this.computeTwoDigitNumber(this.getMinutes())}:${this.computeTwoDigitNumber(this.getSeconds())}`
   }
 }
